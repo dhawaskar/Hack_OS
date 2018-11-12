@@ -1,0 +1,1 @@
+cmd_/home/sandesh/workspace/AOS/assign2/part2/P1/abc.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/sandesh/workspace/AOS/assign2/part2/P1/abc.ko /home/sandesh/workspace/AOS/assign2/part2/P1/abc.o /home/sandesh/workspace/AOS/assign2/part2/P1/abc.mod.o ;  true

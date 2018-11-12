@@ -1,0 +1,9 @@
+# First when you install module it will get all address and store it in address.txt and file shoudl be of size 0 and should be removed and created as given below so that it stores the address. When you install module second time it will not write into file instead it reads from file and check if any system call is intercepted. This is mainly done so that we don;t loose if someone else intercept any system calls or modify our module.
+
+
+clear
+sudo rmmod write 
+rm address.txt 
+touch address.txt
+sudo dmesg -C
+sudo insmod write.ko

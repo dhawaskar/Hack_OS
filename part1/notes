@@ -1,0 +1,18 @@
+/usr/src/linux-headers-4.15.0-36-generic/include/linux/syscalls.h
+ find the sys_ni_syscall prototype.
+long sys_ni_syscall(void); is the prototype
+
+arch/x86/include/generated/asm/syscalls_32.h:__SYSCALL_I386(113, sys_ni_syscall, )
+arch/x86/include/generated/asm/syscalls_32.h:__SYSCALL_I386(166, sys_ni_syscall, )
+
+
+hence syscall numbers are 113 and 116 
+
+arch/x86/include/generated/uapi/asm/unistd_32.h 113 and 116 stands for 
+
+#define __NR_vm86old 113
+#define __NR_vm86 166
+
+
+ffffffff8107a040 T set_pages_ro
+ffffffff8107a0b0 T set_pages_rw
